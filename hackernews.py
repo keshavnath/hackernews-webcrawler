@@ -16,9 +16,7 @@ def create_custom_feed(links, subtext, minpoints):
 
 def runthru(pgno, minpoints):
 
-    for curno in range(pgno):
-
-        curno+=1
+    for curno in range(1, pgno+1):     
 
         url="https://news.ycombinator.com/news?p=" + str(curno)
         res = requests.get(url)
